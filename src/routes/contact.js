@@ -6,3 +6,6 @@ const contactController = require("../controllers/contact");
 router.get("/", contactController.read);
 router.get("/id/:id", contactController.readFromID);
 router.get("/email/:email", contactController.readFromEmail);
+
+// Create
+router.post("/", contactController.create);
