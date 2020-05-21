@@ -13,3 +13,9 @@ router.post("/", contactController.create);
 // Update
 router.put("/id/:id", contactController.updateFromID);
 router.put("/email/:email", contactController.updateFromEmail);
+
+// Delete
+router.delete("/id/:id", contactController.deleteFromID);
+router.delete("/email/:email", contactController.deleteFromEmail);
+
+module.exports = router;
