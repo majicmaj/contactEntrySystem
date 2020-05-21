@@ -15,8 +15,13 @@ const ContactSchema = new mongoose.Schema({
   phone: [
     {
       number: String,
-      type: String
+      type: {
+        type: String,
+        enum: ["home", "work", "mobile"]
+      }
     }
   ],
   email: String
 });
+
+module.exports = mongoose.model("Contact", ContactSchema);
