@@ -1,4 +1,4 @@
-const mongoose = require("../db/connection");
+const mongoose = require("../connection");
 
 const ContactSchema = new mongoose.Schema({
   name: {
