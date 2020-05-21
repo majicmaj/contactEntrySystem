@@ -20,5 +20,14 @@ module.exports = {
   updateFromEmail: (req, res) =>
     Contact.findOneAndUpdate({ email: req.params.email }.req.body).then(
       contact => res.json(contact)
+    ),
+  // Delete
+  deleteFromID: (req, res) =>
+    Contact.findOneAndDelete({ _id: req.params.id }).then(contact =>
+      res.json(contact)
+    ),
+  deleteFromEmail: (req, res) =>
+    Contact.findOneAndDelete({ email: req.params.email }).then(contact =>
+      res.json(contact)
     )
 };
