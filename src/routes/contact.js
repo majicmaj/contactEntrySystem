@@ -9,3 +9,7 @@ router.get("/email/:email", contactController.readFromEmail);
 
 // Create
 router.post("/", contactController.create);
+
+// Update
+router.put("/id/:id", contactController.updateFromID);
+router.put("/email/:email", contactController.updateFromEmail);
