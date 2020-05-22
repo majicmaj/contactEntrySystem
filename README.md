@@ -1,4 +1,4 @@
-# contactEntrySystem
+# Contact Entry System
 
 ## Run:
 - Install Node.js
