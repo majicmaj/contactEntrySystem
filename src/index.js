@@ -7,7 +7,7 @@ app.use(cors());
 app.use(parser.json());
 app.use("/", require("./routes/contact"));
 
-app.set("port", process.env.PORT || 8080);
+app.set("port", process.env.PORT || 27017);
 
 app.listen(app.get("port"), () =>
   console.log(`Success! App Listening on PORT: ${app.get("port")}`)
